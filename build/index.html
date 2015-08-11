@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="main.css">
   <link rel="shortcut icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="parallax.min.js"></script>
 </head>
 <body>
   <div class="container-fluid">
     <header>
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-          <div class="col-sm-4"><img src="avatar.png" height="64" width="64" class="img-circle"></div>
+          <div class="col-sm-4"><img src="avatar.png" height="82" width="64" class="img-circle"></div>
           <div class="col-sm-8 text-right">
             <div class="ul list-inline">
               <li><a href="">Sans</a></li>
@@ -24,10 +26,14 @@
         </div>
       </nav>
     </header>
-    <div class="row col-sm-12"></div>
-    <div class="row col-sm-12"></div>
+    <div class="row">
+      <div id="welcome-image" class="col-md-12">
+        <div data-parallax="scroll" data-bleed="10" data-image-src="bg.jpg" class="parallax-container"></div>
+      </div>
+    </div>
+    <div class="row col-md-12">
+      <p>What parallax.js will do is create a fixed-position element for each parallax image at the start of the document&#8217;s body. This mirror element will sit behind the other elements and match the position and dimensions of its target object.</p>
+      <p>Due to the nature of this implementation, you must ensure that these parallax objects and any layers below them are transparent so that you can see the parallax effect underneath. Also, if there is no other content in this element, you will need to ensure that it has some fixed dimensions otherwise you won&#8217;t see anything.</p>
+    </div>
   </div>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="parallax.min.js"></script>
 </body>
